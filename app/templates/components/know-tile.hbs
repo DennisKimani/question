@@ -1,8 +1,9 @@
 <li>
   {{know.author}}'s question is:-<strong>{{know.question}}</strong>
   {{#if isExploreShowing }}
-    <p>NOTE: <strong>{{know.explore}}</strong></p>
+    <p>NOTE:<strong>{{know.explore}}</strong> <{{action 'exploreHide'}}> </p>
   {{else}}
-    <button>How the question erupted.</button>
+    <button {{action 'exploreShow'}}>How the question erupted.</button>
   {{/if}}
+  <button {{action 'delete' know}}>Delete Question</button>
 </li>
