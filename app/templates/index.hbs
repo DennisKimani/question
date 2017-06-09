@@ -1,0 +1,14 @@
+
+<h1>Welcome to Question and Answer Palace</h1>
+
+<h3>This is the place where  you can air any question of your choice or answer questions posted.</h3>
+
+<ul>
+  {{#each model as |know|}}
+    {{know-tile know=know}}
+  {{/each}}
+</ul>
+<br>
+{{#link-to 'about'}}About{{/link-to}}
+<br>
+{{#link-to 'contact'}}Contact{{/link-to}}
