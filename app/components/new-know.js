@@ -5,6 +5,15 @@ export default Ember.Component.extend({
   actions: {
     knowFormShow() {
       this.set('addNewKnow', true);
+    },
+    saveKnow1() {
+      var params = {
+        author: this.get('author'),
+        question: this.get('question'),
+        explore: this.get('explore'),
+      };
+      this.set('addNewKnow', false);
+      this.sendAction('saveKnow2', params);
     }
   }
 });
