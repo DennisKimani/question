@@ -6,6 +6,12 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    saveKnow3(params) {
+      varNewKnow = this.store.createRecord('know', params);
+      newKnow.save();
+      this.transitionTo('index');
+    },
+    
     destroyKnow(know) {
       know.destroyRecord();
       this.transitionTo('index');
