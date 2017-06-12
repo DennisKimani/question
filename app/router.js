@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('contact');
   this.route('about');
+  this.route('know', {path: '/know/:know_id'});
 });
 
 export default Router;

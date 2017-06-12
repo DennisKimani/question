@@ -1,17 +1,13 @@
 
-<h1>Welcome to Question and Answer Palace</h1>
-
 <h3>This is the place where  you can air any question of your choice or answer questions posted.</h3>
 
+<h2>Available Question</h2>
 <ul>
-  {{#each model as |know|}}
-    {{know-tile know=know destroyKnow="destroyKnow"}}
+  {{#each model.knows as |know|}}
+    {{know-tile know=know update="update" destroyKnow="destroyKnow"}}
   {{/each}}
 </ul>
 
 {{new-know saveKnow2="saveKnow3"}}
 
-<br>
-{{#link-to 'about'}}About{{/link-to}}
-<br>
-{{#link-to 'contact'}}Contact{{/link-to}}
+<hr>

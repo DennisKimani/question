@@ -1,0 +1,26 @@
+{{#if addNewAnswer}}
+<h1>New Answer</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">By:-</label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="replyto">Reply to:-</label>
+      {{input value=replyto id="replyto"}}
+    </div>
+    <div class="form-group">
+      <label for="jibu">Answer:</label>
+      {{input value=jibu id="jibu"}}
+    </div>
+    <div class="form-group">
+      <label for="feedback">Feedback:</label>
+      {{input value=feedback id="feedback"}}
+    </div>
+    <button {{action 'saveAnswer'}}>Submit</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'answerFormShow'}}>New Answer</button>
+{{/if}}

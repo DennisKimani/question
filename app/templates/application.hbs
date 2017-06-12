@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="container">
+  <header class="jumbotron">
+    <h1>Welcome to Question and Answer Palace.</h1><br>
+  </header>
+  {{outlet}}
+<hr>
+  <footer>
+    {{#link-to 'contact'}}We would like to hear more from you. Thank you.{{/link-to}}
+  </footer>
+</div>

@@ -2,18 +2,20 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('know');
+    return Ember.RSVP.hash({
+      knows:this.store.findAll('know'),
+      answers:this.store.findAll('answer')
+    });
   },
-
   actions: {
     saveKnow3(params) {
-      varNewKnow = this.store.createRecord('know', params);
+      var newKnow = this.store.createRecord('know', params);
       newKnow.save();
       this.transitionTo('index');
     },
-    
-    destroyKnow(know) {
-      know.destroyRecord();
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      newAnswer.save();
       this.transitionTo('index');
     }
   }
