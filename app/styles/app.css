@@ -2,10 +2,12 @@
   background-color: blue;
   font-style: italic;
   color:  white;
+  background-size: fill;
 }
 .main{
   background-color: darkgreen;
   color: orange;
+  font-size: 20px;
 }
 .bottom{
   background-color: blue;
