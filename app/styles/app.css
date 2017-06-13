@@ -1,5 +1,14 @@
 .jumbotron{
   background-color: blue;
   font-style: italic;
-  font
+  color:  white;
+}
+.main{
+  background-color: darkgreen;
+  color: orange;
+}
+.bottom{
+  background-color: blue;
+  font-style: italic;
+  color: white;
 }
