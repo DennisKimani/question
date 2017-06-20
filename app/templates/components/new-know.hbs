@@ -14,9 +14,9 @@
         <label for="explore">How you came to it</label>
         {{input value=explore id="explore"}}
       </div>
-      <button {{action 'saveKnow1'}}>Save</button>
+      <button {{action 'saveKnow1'}} class="btn btn-primary">Save</button>
     </form>
   </div>
   {{else}}
-  <button {{action 'knowFormShow'}}>New Question</button>
+  <button {{action 'knowFormShow'}} class="btn btn-warning">New Question</button>
   {{/if}}

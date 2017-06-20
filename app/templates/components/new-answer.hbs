@@ -18,9 +18,9 @@
       <label for="feedback">Feedback:</label>
       {{input value=feedback id="feedback"}}
     </div>
-    <button {{action 'saveAnswer'}}>Submit</button>
+    <button {{action 'saveAnswer'}} class="btn btn-submit">Submit</button>
   </form>
 </div>
 {{else}}
-<button {{action 'answerFormShow'}}>New Answer</button>
+<button {{action 'answerFormShow'}} class="btn btn-warning">New Answer</button>
 {{/if}}

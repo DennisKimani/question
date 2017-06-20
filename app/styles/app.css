@@ -1,18 +1,25 @@
 .jumbotron{
-  background-color: blue;
-  font-style: italic;
-  color:  white;
+  /*background-color: blue;*/
+  /*font-style: italic;*/
+  color:  black;
   background-size: fill;
   text-align: center;
+  /*font-family: 'Lato', sans-serif;*/
+  font-family: 'Lobster', cursive;
 }
 .main{
-  background-color: darkgreen;
+  /*background-color: darkgreen;*/
   color: orange;
   font-size: 20px;
 }
 .bottom{
-  background-color: blue;
+  padding-top: 20px;
+  background-color: black;
   font-style: italic;
   color: white;
   font-size: 20px;
+  padding-bottom: 8px;
+}
+.list{
+  list-style: none;
 }
